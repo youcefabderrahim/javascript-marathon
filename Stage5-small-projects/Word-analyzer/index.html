@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Stage5-small-projects/Word-analyzer/styles.css"
+    />
+    <title>Word Analyzer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Word Analyzer</h2>
+      <div class="title">
+        <input type="text" name="textArea" id="textArea" />
+      </div>
+
+      <div class="radios">
+        <div class="radios-split">
+          <input type="radio" name="choice" id="words" id="" value="words" />
+          <label for="words">Words</label>
+        </div>
+
+        <div class="radios-split">
+          <input type="radio" name="choice" id="vowels" id="vowels" />
+          <label for="vowels">Vowels</label>
+        </div>
+
+        <div class="radios-split">
+          <input type="radio" name="choice" id="letters" id="letters" />
+          <label for="letters">Letters</label>
+        </div>
+      </div>
+
+      <h2 class="result" id="result"></h2>
+
+      <div class="buttons">
+        <button type="submit" onclick="analyze()">Analyze</button>
+        <button type="submit" id="cancel" onclick="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <script src="/Stage5-small-projects/Word-analyzer/script.js"></script>
+  </body>
+</html>
